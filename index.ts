@@ -3,6 +3,10 @@ import os from "os";
 
 export const app = express();
 
+app.get("/", (req: Request, res: Response) => {
+	res.send("Success");
+});
+
 app.get("/healthcheck", (req: Request, res: Response) => {
 	res.send("Healthcheck");
 });
